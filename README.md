@@ -69,5 +69,7 @@ Commit and push when a GitHub remote is configured:
 - Roadmap: [ROADMAP.md](ROADMAP.md)
 - Changelog: [CHANGELOG.md](CHANGELOG.md)
 - Test plan: [docs/TEST_PLAN.md](docs/TEST_PLAN.md)
+- Task board: [docs/TASK_BOARD.md](docs/TASK_BOARD.md)
+- Codex workstreams: [docs/PROJECT_WORKSTREAMS.md](docs/PROJECT_WORKSTREAMS.md)
 - Release notes: [docs/RELEASE_NOTES](docs/RELEASE_NOTES)
 - Vibe coding workflow: [docs/VIBE_CODING_WORKFLOW.md](docs/VIBE_CODING_WORKFLOW.md)
