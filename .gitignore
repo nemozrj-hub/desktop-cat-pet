@@ -1,0 +1,29 @@
+# Build outputs
+.build/
+DerivedData/
+*.o
+*.dSYM/
+
+# Packaged app artifacts
+*.app/
+*.dmg
+*.zip
+
+# Local test output
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+
+# Secrets and local machine state
+.env
+.env.*
+*.pem
+*.p12
+*.mobileprovision
+
+# Codex/project transient outputs
+outputs/
+release/
+
