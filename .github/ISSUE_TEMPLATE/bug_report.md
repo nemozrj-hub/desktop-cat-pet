@@ -1,25 +1,24 @@
 ---
-name: Bug report
-about: Report something broken
+name: Bug 报告
+about: 报告一个问题
 title: "[Bug] "
 labels: bug
 ---
 
-## What happened?
+## 发生了什么？
 
-## Steps to reproduce
+## 复现步骤
 
 1.
 2.
 3.
 
-## Expected behavior
+## 期望表现
 
-## Actual behavior
+## 实际表现
 
-## Version
+## 版本
 
-## macOS version
+## macOS 版本
 
-## Screenshots or recordings
-
+## 截图或录屏

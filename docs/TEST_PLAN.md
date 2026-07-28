@@ -1,74 +1,81 @@
-# Test Plan
+# 测试计划
 
-## Automated Checks
+## 自动化检查
 
-Run:
+运行：
 
 ```bash
 ./scripts/package_app.sh
 ```
 
-Then verify:
+然后验证：
 
-- App package exists
-- `Info.plist` is valid
-- Binary is Universal: `x86_64 + arm64`
-- Code signing verification passes
-- Sprite JSON is valid
-- App package resources match source resources
+- App 包已生成。
+- `Info.plist` 合法。
+- 二进制文件是 Universal：`x86_64 + arm64`。
+- 代码签名验证通过。
+- Sprite JSON 合法。
+- App 包内资源与源码资源一致。
 
-## State Smoke Test
+## 状态冒烟测试
 
-Run from a regular Terminal session:
+从普通 Terminal 会话运行：
 
 ```bash
 ./scripts/state_smoke_test.sh
 ```
 
-Coverage:
+覆盖范围：
 
-- Launch
-- Sleep / wake
-- Scale
-- Opacity
-- Click-through
-- Random movement toggle
-- Body-part click state change
-- Behavior modes
-- Quit
+- 启动
+- 睡觉 / 唤醒
+- 缩放
+- 透明度
+- 点击穿透
+- 随机移动开关
+- 不同部位点击后的状态变化
+- 行为模式切换
+- 退出
 
-## GUI Smoke Test
+## GUI 冒烟测试
 
-Run from a regular Terminal session with Accessibility and Screen Recording permissions:
+从已经获得“辅助功能”和“屏幕录制”权限的普通 Terminal 会话运行：
 
 ```bash
 ./scripts/gui_smoke_test.sh
 ```
 
-Coverage:
+覆盖范围：
 
-- Visible floating window
-- Screenshot capture
-- Walk frame screenshot
-- Click animation
-- Drag movement
-- Sleep / wake
-- Scale
-- Opacity
-- Click-through
-- Random movement
-- Quit
+- 悬浮窗口可见
+- 截图可用
+- 行走帧截图
+- 点击动画
+- 拖拽移动
+- 睡觉 / 唤醒
+- 缩放
+- 透明度
+- 点击穿透
+- 随机移动
+- 退出
 
-## Manual Checklist
+## 手动检查清单
 
-- Open app by double-clicking `DesktopCatPet.app`
-- Confirm `Cat` appears in the menu bar
-- Confirm pet appears with transparent background
-- Click head, body, and paws
-- Long-press and drag the pet
-- Right-click the pet
-- Switch all behavior modes
-- Test with Dock at bottom, left, and right when possible
-- Test with multiple displays when possible
-- Quit and reopen; confirm position/settings persist
+- 双击打开 `DesktopCatPet.app`。
+- 确认菜单栏出现 `Cat`。
+- 确认桌宠背景透明。
+- 点击头部、身体、爪子，确认有不同反应。
+- 长按并拖拽桌宠。
+- 右键点击桌宠，确认菜单弹出。
+- 切换所有行为模式。
+- 在 Dock 位于底部、左侧、右侧时测试贴边和停靠行为。
+- 在多屏幕环境中测试边界。
+- 退出并重新打开，确认位置和设置可以保持。
 
+## v0.6.0 需要补充的测试
+
+- 资源包 JSON 校验。
+- 资源图片缺失或损坏时的错误处理。
+- 资源包导入失败时不影响当前内置桌宠。
+- 多资源切换后的动画状态恢复。
+- sprite sheet 边界不串帧。

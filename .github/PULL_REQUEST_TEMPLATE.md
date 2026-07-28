@@ -1,8 +1,7 @@
-## Summary
+## 概要
 
-## Changes
+## 变更内容
 
-## Validation
+## 验证方式
 
-## Release impact
-
+## 发布影响

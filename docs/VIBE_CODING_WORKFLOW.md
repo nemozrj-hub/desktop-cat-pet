@@ -1,68 +1,70 @@
-# Vibe Coding Workflow
+# Vibe Coding 工作流
 
-This document defines how Codex should finish each development pass for this project.
+本文档定义 Codex 在“麻吉桌宠”项目中完成一次开发或版本收尾时应该遵守的流程。
 
-## Standard Finish Flow
+## 标准收尾流程
 
-1. Inspect changed files.
-2. Confirm files belong to the current project scope.
-3. Update docs:
+1. 检查变更文件。
+2. 确认变更属于当前项目范围。
+3. 根据实际变化更新文档：
    - `README.md`
    - `CHANGELOG.md`
-   - `ROADMAP.md` when plans change
+   - `ROADMAP.md`
    - `docs/RELEASE_NOTES/vX.Y.Z.md`
-   - `docs/DECISIONS.md` for major technical decisions
-4. Run build and validation scripts.
-5. Package the app.
-6. Confirm release artifact path.
-7. Commit with a concise message.
-8. Tag stable versions, for example `v0.4.0`.
-9. Push to GitHub when a remote exists.
-10. Create a GitHub Release for stable versions and upload release assets.
+   - `docs/DECISIONS.md`
+   - `docs/TASK_BOARD.md`
+4. 运行构建和验证脚本。
+5. 打包 App。
+6. 确认发布产物路径。
+7. 用简洁明确的信息提交 Git。
+8. 稳定版本打标签，例如 `v0.4.0`。
+9. 如果已经配置远端仓库，推送到 GitHub。
+10. 稳定版本需要准备 GitHub Release，并上传发布产物。
 
-Shortcut:
+快捷命令：
 
 ```bash
-./scripts/github_sync.sh "Update DesktopCatPet" 0.4.0
+./scripts/github_sync.sh "更新麻吉桌宠" 0.4.0
 ```
 
-## Repository Rules
+## 仓库规则
 
-Commit:
+应该提交：
 
-- Source code
-- Scripts
-- Documentation
-- Small runtime assets
-- Test files
+- 源代码
+- 脚本
+- 文档
+- 小型运行资源
+- 测试文件
+- GitHub 模板和 CI 配置
 
-Do not commit:
+不应该提交：
 
 - `.build/`
 - `.app`
 - `.zip`
 - `.dmg`
-- temporary screenshots
-- local credentials
-- API keys
+- 临时截图
+- 本机凭据
+- API key
 
-## Version Rule
+## 版本规则
 
-- Feature version: `0.x.0`
-- Bugfix version: `0.x.y`
-- Stable public version: `1.0.0`
+- 功能版本：`0.x.0`
+- Bugfix 版本：`0.x.y`
+- 稳定公开版本：`1.0.0`
 
-## Codex Prompt
+## Codex 提示词
 
-Use this prompt after a version is complete:
+版本完成后，可以这样对 Codex 说：
 
 ```text
-Please run the DesktopCatPet project finish flow:
-1. inspect changed files
-2. update README, CHANGELOG, ROADMAP, release notes, and decisions if needed
-3. run build and validation
-4. package the app
-5. prepare git commit and tag
-6. push to GitHub if the remote is configured
-7. prepare release notes for GitHub Releases
+请执行麻吉桌宠项目收尾流程：
+1. 检查变更文件
+2. 根据需要更新 README、CHANGELOG、ROADMAP、release notes、技术决策和任务看板
+3. 运行构建和验证
+4. 打包 App
+5. 准备 Git 提交和版本标签
+6. 如果远端仓库已配置，推送到 GitHub
+7. 准备 GitHub Releases 发布说明
 ```

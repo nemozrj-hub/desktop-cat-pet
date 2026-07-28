@@ -1,15 +1,14 @@
 ---
-name: Feature request
-about: Suggest an improvement
+name: 功能建议
+about: 提出一个改进想法
 title: "[Feature] "
 labels: feature
 ---
 
-## Problem
+## 问题
 
-## Desired behavior
+## 期望行为
 
-## Why it matters
+## 为什么重要
 
-## Proposed version
-
+## 建议版本

@@ -1,52 +1,51 @@
-# Roadmap
+# 路线图
 
 ## v0.1.0 MVP
 
-- Transparent floating macOS desktop pet
-- Sprite sheet animation playback
-- Menu bar controls
-- Universal binary packaging
+- 实现透明悬浮的 macOS 桌宠窗口
+- 支持 sprite sheet 动画播放
+- 支持菜单栏控制
+- 支持 Intel Mac 和 Apple Silicon Mac 的 Universal binary 打包
 
-## v0.2.0 Controls
+## v0.2.0 控制能力
 
-- Settings window
-- Opacity
-- Click-through
-- Launch at login
-- Right-click context menu
+- 增加设置窗口
+- 支持透明度调节
+- 支持点击穿透
+- 支持开机启动
+- 支持右键菜单
 
-## v0.4.0 Behavior System
+## v0.4.0 行为系统
 
-- Natural behavior modes
-- Dock sitting
-- Edge walking
-- Mouse following
-- Looking at mouse
-- Mood, intimacy, fatigue, active time
-- Desktop bubbles
+- 增加更自然的行为模式
+- 支持坐在 Dock 上
+- 支持贴边走
+- 支持跟随鼠标
+- 支持看向鼠标
+- 增加心情、亲密度、疲劳、活跃时间
+- 增加桌面气泡
 
-## v0.6.0 Resource Packs
+## v0.6.0 资源包系统
 
-- `pet.json + spritesheet.png` resource pack format
-- Import and validate pet packs
-- Animation preview
-- Sprite artifact cleanup
-- Multiple pet profiles
+- 定义 `pet.json + spritesheet.png` 资源包格式
+- 支持导入和校验桌宠资源包
+- 支持动画预览
+- 清理 sprite sheet 边界瑕疵和串帧风险
+- 支持多个桌宠资料档案
 
-## v0.8.0 Productivity Companion
+## v0.8.0 生产力陪伴
 
-- Pomodoro timer
-- Water reminder
-- Break reminder
-- Local notification support
-- Basic reminder bubbles
+- 增加番茄钟
+- 增加喝水提醒
+- 增加休息提醒
+- 支持本地通知
+- 支持基础提醒气泡
 
-## v1.0.0 Public Release
+## v1.0.0 公开发布
 
-- Developer ID signing
-- Notarization
-- DMG packaging
-- GitHub Releases
-- Clear user guide
-- Stable regression test checklist
-
+- 接入 Developer ID 签名
+- 完成 notarization 公证流程
+- 支持 DMG 打包
+- 使用 GitHub Releases 发布产物
+- 完成清晰的用户使用说明
+- 建立稳定的回归测试清单

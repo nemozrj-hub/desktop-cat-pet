@@ -1,35 +1,34 @@
-# DesktopCatPet Changelog
+# 变更记录
 
 ## 0.4.0
 
-- Added behavior modes: auto, Dock sitting, edge walking, mouse following, and looking at mouse.
-- Added screen-aware movement boundaries for multi-display setups.
-- Added Dock-edge sitting placement for bottom, left, and right Dock layouts.
-- Added wellbeing state: mood, intimacy, fatigue, and active time.
-- Added desktop speech bubbles for greetings, reminders, and status feedback.
-- Added different reactions for head, body, and paw clicks.
-- Added long-press hold behavior and drop feedback.
-- Added status bubble entry to the menu bar and pet context menu.
-- Extended UI test state output with behavior mode and wellbeing metrics.
+- 增加行为模式：自动、坐在 Dock 上、贴边走、跟随鼠标、看向鼠标。
+- 增加多屏幕边界感知。
+- 支持底部、左侧、右侧 Dock 布局下的贴边停靠。
+- 增加心情、亲密度、疲劳、活跃时间等状态。
+- 增加桌面气泡，用于打招呼、提醒和状态反馈。
+- 增加头部、身体、爪子等不同点击区域反应。
+- 增加长按抱起和松手落地反馈。
+- 在菜单栏和桌宠右键菜单中增加状态气泡入口。
+- 扩展 UI 测试状态输出，加入行为模式和状态指标。
 
 ## 0.2.0
 
-- Added a native settings window.
-- Added opacity control.
-- Added click-through mode.
-- Added automatic roaming/sleeping toggle.
-- Added launch-at-login toggle through macOS login item APIs.
-- Added a right-click pet context menu.
-- Added menu bar shortcuts for settings, opacity, click-through, random behavior, and reset position.
-- Extended UI test mode with opacity, click-through, and random behavior state.
-- Updated app version to 0.2.0.
+- 增加原生设置窗口。
+- 增加透明度控制。
+- 增加点击穿透模式。
+- 增加自动游走/睡觉开关。
+- 通过 macOS login item API 增加开机启动开关。
+- 增加桌宠右键菜单。
+- 增加菜单栏快捷项：设置、透明度、点击穿透、随机行为、重置位置。
+- 扩展 UI 测试模式，加入透明度、点击穿透和随机行为状态。
+- 将 App 版本更新为 `0.2.0`。
 
 ## 0.1.0
 
-- Initial independent macOS desktop pet MVP.
-- Transparent floating NSPanel.
-- Sprite sheet animation playback from JSON frame metadata.
-- Idle, walk, click, drag, and sleep animations.
-- Menu bar controls.
-- Universal binary for Intel Mac and Apple Silicon Mac.
-
+- 完成第一个可独立运行的 macOS 桌宠 MVP。
+- 实现透明悬浮 `NSPanel`。
+- 支持基于 JSON 帧数据的 sprite sheet 动画播放。
+- 支持待机、行走、点击、拖拽、睡觉动画。
+- 增加菜单栏控制。
+- 支持 Intel Mac 和 Apple Silicon Mac 的 Universal binary。

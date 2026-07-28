@@ -1,21 +1,27 @@
-# GitHub Setup
+# GitHub 设置
 
-## Recommended Repository
+## 推荐仓库
 
-Create a private GitHub repository named:
+推荐仓库名：
 
 ```text
 desktop-cat-pet
 ```
 
-## First-Time Setup
+当前 GitHub 仓库：
 
-From this project directory:
+```text
+https://github.com/nemozrj-hub/desktop-cat-pet
+```
+
+## 首次设置
+
+如果本地还不是 Git 仓库，可以在项目目录运行：
 
 ```bash
 git init
 git add .
-git commit -m "Initialize DesktopCatPet project"
+git commit -m "初始化麻吉桌宠项目"
 git branch -M main
 git remote add origin git@github.com:<owner>/desktop-cat-pet.git
 git push -u origin main
@@ -23,39 +29,39 @@ git tag v0.4.0
 git push origin v0.4.0
 ```
 
-If you use HTTPS instead of SSH:
+如果使用 HTTPS：
 
 ```bash
 git remote add origin https://github.com/<owner>/desktop-cat-pet.git
 ```
 
-## Release Assets
+## 发布产物
 
-Upload packaged files to GitHub Releases instead of committing them:
+发布包不要直接提交进源码仓库，优先上传到 GitHub Releases 或 GitHub Actions Artifacts。
+
+当前 `v0.4.0` 发布包路径：
 
 ```text
 /Users/apple/Documents/Codex/2026-07-22/wo-xian/outputs/DesktopCatPet-0.4.0-universal.zip
 ```
 
-## Codex Automation
+## Codex 自动化
 
-After the remote is configured, ask Codex:
+配置好远端后，可以对 Codex 说：
 
 ```text
-Run the DesktopCatPet finish flow and sync it to GitHub.
+用 vibe-project-manager 完成这个版本收尾，并同步到 GitHub。
 ```
 
-Codex should use:
+项目内脚本：
 
 ```bash
-./scripts/github_sync.sh "Update DesktopCatPet" 0.4.0
+./scripts/github_sync.sh "更新麻吉桌宠" 0.4.0
 ```
 
-GitHub Actions will build the app again and keep the packaged `.zip` as a workflow artifact.
+GitHub Actions 会在远端重新构建，并把 `.zip` 作为工作流产物保存。
 
-## Issue Labels
-
-Recommended labels:
+## 推荐 Issue 标签
 
 - `bug`
 - `feature`

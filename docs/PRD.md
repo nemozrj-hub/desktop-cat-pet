@@ -1,46 +1,57 @@
-# Product Requirements Document
+# 产品需求文档
 
-## Product
+## 产品
 
-DesktopCatPet is a lightweight macOS desktop companion that runs independently as a floating transparent desktop pet.
+麻吉桌宠是一个轻量级 macOS 桌面陪伴应用。它以透明悬浮窗口的形式显示在桌面上，可以独立运行，不依赖 Codex。
 
-## Target User
+## 目标用户
 
-- Mac users who want a small companion on the desktop
-- Vibe coding users who want a playful local app that can grow over time
-- Future users who may want reminders, focus features, or AI coding-state feedback
+- 想在 Mac 桌面上拥有一个小陪伴的用户
+- 使用 vibe coding 做个人软件项目的用户
+- 未来希望桌宠具备提醒、专注、情绪反馈或 AI/Codex 状态反馈能力的用户
 
-## Goals
+## 产品目标
 
-- Run independently on macOS without Codex at runtime
-- Support Intel Mac and Apple Silicon Mac
-- Feel alive through animation, movement, and small reactions
-- Stay lightweight and native
-- Keep the project easy to extend through documented versions and resource formats
+- 在 macOS 上独立运行，运行时不依赖 Codex。
+- 同时支持 Intel Mac 和 Apple Silicon Mac。
+- 通过动画、移动和小反应，让桌宠显得更自然、更有生命感。
+- 保持轻量、原生、低打扰。
+- 通过文档化版本、资源格式和任务拆分，让项目易于长期扩展。
 
-## Non-Goals
+## 非目标
 
-- No cloud account requirement
-- No runtime dependency on Codex
-- No App Store submission until the app is stable
-- No AI model dependency in the core app
+- 当前不要求云账号。
+- 核心 App 不依赖在线 AI 模型。
+- 未稳定前不进入 App Store 发布流程。
+- v1.0 前不追求完整商业化分发。
 
-## Current Scope
+## 当前范围
 
-Version `0.4.0` includes:
+`0.4.0` 已包含：
 
-- Transparent floating pet window
-- Menu bar and right-click controls
-- Settings window
-- Basic animation state machine
-- Natural behavior modes
-- Mood, intimacy, fatigue, and active time
-- Desktop bubbles
+- 透明悬浮桌宠窗口
+- 菜单栏和右键菜单控制
+- 设置窗口
+- 基础动画状态机
+- 更自然的行为模式
+- 心情、亲密度、疲劳、活跃时间
+- 桌面气泡
 
-## Future Scope
+## 后续范围
 
-- Resource pack system
-- Productivity reminders
-- Optional AI/Codex status integration
-- Formal signing, notarization, and automatic update flow
+- 资源包系统
+- 多桌宠资料档案
+- 生产力提醒
+- 可选 AI/Codex 状态集成
+- 正式签名、公证、DMG 打包和自动更新
 
+## v0.6.0 初步方向
+
+v0.6.0 建议聚焦“资源包系统”，目标是让桌宠从单一内置猫资源，扩展到可导入、可校验、可切换的资源结构。
+
+初步验收标准：
+
+- 能定义稳定的 `pet.json + spritesheet.png` 格式。
+- 能继续兼容当前内置猫资源。
+- 能发现明显无效的 JSON 或图片资源。
+- 能为未来多个桌宠形象打基础。
